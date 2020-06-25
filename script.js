@@ -3,8 +3,13 @@
 var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a')
 console.log(currentTime);
 
+// We must create a function that performs the task of retreiving the current day and current time
 
+function displayTime(){
+    document.getElementById("currentTime").innerHTML = currentTime;
+};
 // We must create a button with event listener to save to local storage 
+
 //When this button is clicked, this will trigger the function that stores input in local storage
 // Must create a loop 
 // Must add events to the submit button to save what is in the input field to local storage
