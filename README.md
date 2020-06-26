@@ -10,3 +10,7 @@ Poor time management can result in missed meetings and deadlines or create the a
 
 This app is built for an employee with a busy schedule that wants to add important events to a daily plannerso that they can manage their time effectively.
 
+Screenshot: 
+
+❮img src="ScreenshotDayScheduler.png" ❯
+
