@@ -8,7 +8,12 @@ console.log(currentTime);
 function displayTime(){
     document.getElementById("currentDay").innerHTML = currentTime;
 };
+// calls a function or evaluates an expression at specified intervals - 1000 milliseconds
+setInterval(displayTime, 1000);
+displayTime()
 
+// $( document ).ready() will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute
+$(document).ready(function()
 // We must create a button with event listener to save to local storage 
 $(".save-button").on("click", function(){
     // attr() method - returns attributes and values of the selected parent element
@@ -19,7 +24,9 @@ $(".save-button").on("click", function(){
     // Create reference for every .task class and change the innerHTML
     var userInput = $(this).parent().siblings(".task").val();
     console.log(userInput)
-}
+    // localStorage.setItem is being utilized - the hour-9 value from localStorage should go in the appropriate input field
+    localStorage.setItem(hour, input);
+})
 // When this button is clicked, this will trigger the function that stores input in local storage
 // Must create a loop 
 // Must add events to the submit button to save what is in the input field to local storage
